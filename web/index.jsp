@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+  <!DOCTYPE html>
+  <html>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +12,8 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Google fonts - Popppins for copy-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
     <!-- orion icons-->
@@ -21,49 +24,69 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png?3">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    <script src="scripts.js" type="text/javascript"></script>
-    
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+    <script src="js/icons.js" type="text/javascript"></script>
   </head>
+
   <body>
     <!-- navbar-->
     <header class="header">
-        <div class="header">
-            
-        </div>
+      <div class="cabecera">
+
+      </div>
     </header>
     <div class="d-flex align-items-stretch">
-      <div id="sidebar" class="sidebar py-3">
-        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
-        <ul class="sidebar-menu list-unstyled">
-              <li class="sidebar-list-item"><a href="index.html" class="sidebar-link text-muted active"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
-              <li class="sidebar-list-item"><a href="charts.html" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Charts</span></a></li>
-              <li class="sidebar-list-item"><a href="tables.html" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Tables</span></a></li>
-              <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
-          <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
-            <div id="pages" class="collapse">
-              <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
-                <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page one</a></li>
-                <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page two</a></li>
-                <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page three</a></li>
-                <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page four</a></li>
-              </ul>
-            </div>
-          </li>
-              <li class="sidebar-list-item"><a href="login.html" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Login</span></a></li>
-        </ul>
-        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">EXTRAS</div>
-        <ul class="sidebar-menu list-unstyled">
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-database-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-imac-screen-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-paperwork-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-        </ul>
+      <div id="sidebar" class="sidebar py-3 shrink show">
+
+        <!-- <li class="sidebar-list-item"><a href="charts.html" class="sidebar-link text-muted"><i
+                          class="o-sales-up-1 mr-3 text-gray"></i><span>Charts</span></a></li>
+                    <li class="sidebar-list-item"><a href="tables.html" class="sidebar-link text-muted"><i
+                          class="o-table-content-1 mr-3 text-gray"></i><span>Tables</span></a></li>
+                    <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i
+                          class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
+                    <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false"
+                        aria-controls="pages" class="sidebar-link text-muted"><i
+                          class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
+                      <div id="pages" class="collapse">
+                        <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                          <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page one</a></li>
+                          <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page two</a></li>
+                          <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page three</a></li>
+                          <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page four</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sidebar-list-item"><a href="login.html" class="sidebar-link text-muted"><i
+                          class="o-exit-1 mr-3 text-gray"></i><span>Login</span></a></li>
+                  </ul>
+                  <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">EXTRAS
+                  </div>
+                  <ul class="sidebar-menu list-unstyled">
+                    <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i
+                          class="o-database-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+                    <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i
+                          class="o-imac-screen-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+                    <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i
+                          class="o-paperwork-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+                    <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i
+                          class="o-wireframe-1 mr-3 text-gray"></i><span>Demo</span></a></li> -->
+
       </div>
+
+      <!--Pantalla Principal-->
+
       <div class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">
+
+          <!--Barras de datos-->
+
           <section class="py-5">
             <div class="row">
               <div class="col-xl-3 col-lg-6 mb-4 mb-xl-0">
@@ -112,6 +135,8 @@
               </div>
             </div>
           </section>
+
+
           <section>
             <div class="row mb-4">
               <div class="col-lg-7 mb-4 mb-lg-0">
@@ -132,7 +157,9 @@
                   <div class="card-body">
                     <div class="row align-items-center flex-row">
                       <div class="col-lg-5">
-                        <h2 class="mb-0 d-flex align-items-center"><span>86.4</span><span class="dot bg-green d-inline-block ml-3"></span></h2><span class="text-muted text-uppercase small">Work hours</span>
+                        <h2 class="mb-0 d-flex align-items-center"><span>86.4</span><span
+                            class="dot bg-green d-inline-block ml-3"></span></h2><span
+                          class="text-muted text-uppercase small">Work hours</span>
                         <hr><small class="text-muted">Lorem ipsum dolor sit</small>
                       </div>
                       <div class="col-lg-7">
@@ -145,7 +172,9 @@
                   <div class="card-body">
                     <div class="row align-items-center flex-row">
                       <div class="col-lg-5">
-                        <h2 class="mb-0 d-flex align-items-center"><span>1.724</span><span class="dot bg-violet d-inline-block ml-3"></span></h2><span class="text-muted text-uppercase small">Server time</span>
+                        <h2 class="mb-0 d-flex align-items-center"><span>1.724</span><span
+                            class="dot bg-violet d-inline-block ml-3"></span></h2><span
+                          class="text-muted text-uppercase small">Server time</span>
                         <hr><small class="text-muted">Lorem ipsum dolor sit</small>
                       </div>
                       <div class="col-lg-7">
@@ -162,7 +191,9 @@
                   <div class="card-body">
                     <div class="row align-items-center mb-3 flex-row">
                       <div class="col-lg-5">
-                        <h2 class="mb-0 d-flex align-items-center"><span>86%</span><span class="dot bg-violet d-inline-block ml-3"></span></h2><span class="text-muted text-uppercase small">Monthly Usage</span>
+                        <h2 class="mb-0 d-flex align-items-center"><span>86%</span><span
+                            class="dot bg-violet d-inline-block ml-3"></span></h2><span
+                          class="text-muted text-uppercase small">Monthly Usage</span>
                         <hr><small class="text-muted">Lorem ipsum dolor sit</small>
                       </div>
                       <div class="col-lg-7">
@@ -175,7 +206,9 @@
                   <div class="card-body">
                     <div class="row align-items-center flex-row">
                       <div class="col-lg-5">
-                        <h2 class="mb-0 d-flex align-items-center"><span>$126,41</span><span class="dot bg-green d-inline-block ml-3"></span></h2><span class="text-muted text-uppercase small">All Income</span>
+                        <h2 class="mb-0 d-flex align-items-center"><span>$126,41</span><span
+                            class="dot bg-green d-inline-block ml-3"></span></h2><span
+                          class="text-muted text-uppercase small">All Income</span>
                         <hr><small class="text-muted">Lorem ipsum dolor sit</small>
                       </div>
                       <div class="col-lg-7">
@@ -208,7 +241,8 @@
                     <h1 class="mb-5"><i class="fab fa-cc-visa"></i></h1>
                     <div class="d-flex justify-content-between align-items-end pt-3">
                       <div class="text-uppercase">
-                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362 6985</small>
+                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362
+                          6985</small>
                       </div>
                       <h4 class="mb-0">$417.78</h4>
                     </div>
@@ -221,7 +255,8 @@
                     <h1 class="mb-5"><i class="fab fa-cc-mastercard"></i></h1>
                     <div class="d-flex justify-content-between align-items-end pt-3">
                       <div class="text-uppercase">
-                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362 6985</small>
+                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362
+                          6985</small>
                       </div>
                       <h4 class="mb-0">$124.17</h4>
                     </div>
@@ -234,7 +269,8 @@
                     <h1 class="mb-5"><i class="fab fa-cc-discover"></i></h1>
                     <div class="d-flex justify-content-between align-items-end pt-3">
                       <div class="text-uppercase">
-                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362 6985</small>
+                        <div class="font-weight-bold d-block">Card Number</div><small class="text-gray">1245 1478 1362
+                          6985</small>
                       </div>
                       <h4 class="mb-0">$568.00</h4>
                     </div>
@@ -246,50 +282,60 @@
           <section>
             <div class="row">
               <div class="col-lg-8">
-                <div class="card mb-5 mb-lg-0">         
+                <div class="card mb-5 mb-lg-0">
                   <div class="card-header">
                     <h2 class="h6 mb-0 text-uppercase">Transaction history</h2>
                   </div>
                   <div class="card-body">
                     <p class="text-gray mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
+                    <div
+                      class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
                       <div class="left d-flex align-items-center">
                         <div class="icon icon-lg shadow mr-3 text-gray"><i class="fab fa-dropbox"></i></div>
                         <div class="text">
-                          <h6 class="mb-0 d-flex align-items-center"> <span>Dropbox Inc.</span><span class="dot dot-sm ml-2 bg-violet"></span></h6><small class="text-gray">Account renewal</small>
+                          <h6 class="mb-0 d-flex align-items-center"> <span>Dropbox Inc.</span><span
+                              class="dot dot-sm ml-2 bg-violet"></span></h6><small class="text-gray">Account
+                            renewal</small>
                         </div>
                       </div>
                       <div class="right ml-5 ml-sm-0 pl-3 pl-sm-0 text-violet">
                         <h5>-$20</h5>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
+                    <div
+                      class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
                       <div class="left d-flex align-items-center">
                         <div class="icon icon-lg shadow mr-3 text-gray"><i class="fab fa-apple"></i></div>
                         <div class="text">
-                          <h6 class="mb-0 d-flex align-items-center"> <span>App Store.</span><span class="dot dot-sm ml-2 bg-green"></span></h6><small class="text-gray">Software cost</small>
+                          <h6 class="mb-0 d-flex align-items-center"> <span>App Store.</span><span
+                              class="dot dot-sm ml-2 bg-green"></span></h6><small class="text-gray">Software
+                            cost</small>
                         </div>
                       </div>
                       <div class="right ml-5 ml-sm-0 pl-3 pl-sm-0 text-green">
                         <h5>-$20</h5>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
+                    <div
+                      class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
                       <div class="left d-flex align-items-center">
                         <div class="icon icon-lg shadow mr-3 text-gray"><i class="fas fa-shopping-basket"></i></div>
                         <div class="text">
-                          <h6 class="mb-0 d-flex align-items-center"> <span>Supermarket.</span><span class="dot dot-sm ml-2 bg-blue"></span></h6><small class="text-gray">Shopping</small>
+                          <h6 class="mb-0 d-flex align-items-center"> <span>Supermarket.</span><span
+                              class="dot dot-sm ml-2 bg-blue"></span></h6><small class="text-gray">Shopping</small>
                         </div>
                       </div>
                       <div class="right ml-5 ml-sm-0 pl-3 pl-sm-0 text-blue">
                         <h5>-$20</h5>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
+                    <div
+                      class="d-flex justify-content-between align-items-start align-items-sm-center mb-4 flex-column flex-sm-row">
                       <div class="left d-flex align-items-center">
                         <div class="icon icon-lg shadow mr-3 text-gray"><i class="fab fa-android"></i></div>
                         <div class="text">
-                          <h6 class="mb-0 d-flex align-items-center"> <span>Play Store.</span><span class="dot dot-sm ml-2 bg-red"></span></h6><small class="text-gray">Software cost</small>
+                          <h6 class="mb-0 d-flex align-items-center"> <span>Play Store.</span><span
+                              class="dot dot-sm ml-2 bg-red"></span></h6><small class="text-gray">Software cost</small>
                         </div>
                       </div>
                       <div class="right ml-5 ml-sm-0 pl-3 pl-sm-0 text-red">
@@ -328,9 +374,10 @@
                   <div class="icon bg-blue text-white"><i class="fas fa-user-friends"></i></div>
                 </div>
                 <div class="card px-5 py-4">
-                  <h2 class="mb-0 d-flex align-items-center"><span>86.4</span><span class="dot bg-red d-inline-block ml-3"></span></h2><span class="text-muted">Server time</span>
+                  <h2 class="mb-0 d-flex align-items-center"><span>86.4</span><span
+                      class="dot bg-red d-inline-block ml-3"></span></h2><span class="text-muted">Server time</span>
                   <div class="chart-holder">
-                    <canvas id="lineChart3" style="max-height: 7rem !important;" class="w-100">      </canvas>
+                    <canvas id="lineChart3" style="max-height: 7rem !important;" class="w-100"> </canvas>
                   </div>
                 </div>
               </div>
@@ -338,46 +385,71 @@
           </section>
           <section class="py-5">
             <div class="row">
-              <div class="col-lg-12"><a href="#" class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
+              <div class="col-lg-12"><a href="#"
+                  class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
                   <div class="row">
-                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left"><strong class="h5 mb-0">24<sup class="smaller text-gray font-weight-normal">Apr</sup></strong><img src="img/avatar-1.jpg" alt="..." style="max-width: 3rem" class="rounded-circle mx-3 my-2 my-lg-0">
+                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
+                      <strong class="h5 mb-0">24<sup class="smaller text-gray font-weight-normal">Apr</sup></strong><img
+                        src="img/avatar-1.jpg" alt="..." style="max-width: 3rem"
+                        class="rounded-circle mx-3 my-2 my-lg-0">
                       <h6 class="mb-0">Jason Maxwell</h6>
                     </div>
                     <div class="col-lg-9 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
-                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">User testing</div>
-                      <p class="mb-0 mt-3 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">User testing
+                      </div>
+                      <p class="mb-0 mt-3 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor.</p>
                     </div>
-                  </div></a></div>
-              <div class="col-lg-12"><a href="#" class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
+                  </div>
+                </a></div>
+              <div class="col-lg-12"><a href="#"
+                  class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
                   <div class="row">
-                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left"><strong class="h5 mb-0">24<sup class="smaller text-gray font-weight-normal">Nov</sup></strong><img src="img/avatar-2.jpg" alt="..." style="max-width: 3rem" class="rounded-circle mx-3 my-2 my-lg-0">
+                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
+                      <strong class="h5 mb-0">24<sup class="smaller text-gray font-weight-normal">Nov</sup></strong><img
+                        src="img/avatar-2.jpg" alt="..." style="max-width: 3rem"
+                        class="rounded-circle mx-3 my-2 my-lg-0">
                       <h6 class="mb-0">Sam Andy</h6>
                     </div>
                     <div class="col-lg-9 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
-                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">Web Developer</div>
+                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">Web
+                        Developer</div>
                       <p class="mb-0 mt-3 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                     </div>
-                  </div></a></div>
-              <div class="col-lg-12"><a href="#" class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
+                  </div>
+                </a></div>
+              <div class="col-lg-12"><a href="#"
+                  class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
                   <div class="row">
-                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left"><strong class="h5 mb-0">17<sup class="smaller text-gray font-weight-normal">Aug</sup></strong><img src="img/avatar-3.jpg" alt="..." style="max-width: 3rem" class="rounded-circle mx-3 my-2 my-lg-0">
+                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
+                      <strong class="h5 mb-0">17<sup class="smaller text-gray font-weight-normal">Aug</sup></strong><img
+                        src="img/avatar-3.jpg" alt="..." style="max-width: 3rem"
+                        class="rounded-circle mx-3 my-2 my-lg-0">
                       <h6 class="mb-0">Margret Peter</h6>
                     </div>
                     <div class="col-lg-9 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
-                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">Analysis Agent</div>
+                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">Analysis
+                        Agent</div>
                       <p class="mb-0 mt-3 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                     </div>
-                  </div></a></div>
-              <div class="col-lg-12"><a href="#" class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
+                  </div>
+                </a></div>
+              <div class="col-lg-12"><a href="#"
+                  class="message card px-5 py-3 mb-4 bg-hover-gradient-primary no-anchor-style">
                   <div class="row">
-                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left"><strong class="h5 mb-0">15<sup class="smaller text-gray font-weight-normal">Sep</sup></strong><img src="img/avatar-4.jpg" alt="..." style="max-width: 3rem" class="rounded-circle mx-3 my-2 my-lg-0">
+                    <div class="col-lg-3 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
+                      <strong class="h5 mb-0">15<sup class="smaller text-gray font-weight-normal">Sep</sup></strong><img
+                        src="img/avatar-4.jpg" alt="..." style="max-width: 3rem"
+                        class="rounded-circle mx-3 my-2 my-lg-0">
                       <h6 class="mb-0">Jason Doe</h6>
                     </div>
                     <div class="col-lg-9 d-flex align-items-center flex-column flex-lg-row text-center text-md-left">
-                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">User testing</div>
+                      <div class="bg-gray-100 roundy px-4 py-1 mr-0 mr-lg-3 mt-2 mt-lg-0 text-dark exclode">User testing
+                      </div>
                       <p class="mb-0 mt-3 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                     </div>
-                  </div></a></div>
+                  </div>
+                </a></div>
             </div>
           </section>
         </div>
@@ -388,7 +460,8 @@
                 <p class="mb-2 mb-md-0">Your company &copy; 2018-2020</p>
               </div>
               <div class="col-md-6 text-center text-md-right text-gray-400">
-                <p class="mb-0">Design by <a href="https://bootstrapious.com/admin-templates" class="external text-gray-400">Bootstrapious</a></p>
+                <p class="mb-0">Design by <a href="https://bootstrapious.com/admin-templates"
+                    class="external text-gray-400">Bootstrapious</a></p>
                 <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
               </div>
             </div>
@@ -398,12 +471,13 @@
     </div>
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/popper.js/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/charts-home.js"></script>
     <script src="js/front.js"></script>
   </body>
-</html>
+
+  </html>
