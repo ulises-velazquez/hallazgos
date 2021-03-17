@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10/03/2021 11:22:19 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mx.edu.utxj.pye.hallazgos.pojos.TbHallazgo" table="tb_hallazgo" catalog="hallazgos" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbUsuarioByEvalua" class="mx.edu.utxj.pye.hallazgos.pojos.TbUsuario" fetch="select">
+            <column name="Evalua" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tbUsuarioByAsignada" class="mx.edu.utxj.pye.hallazgos.pojos.TbUsuario" fetch="select">
+            <column name="Asignada" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tbUsuarioByReporta" class="mx.edu.utxj.pye.hallazgos.pojos.TbUsuario" fetch="select">
+            <column name="Reporta" not-null="true" />
+        </many-to-one>
+        <property name="accion" type="string">
+            <column name="Accion" length="2" />
+        </property>
+        <property name="area" type="string">
+            <column name="Area" length="5" />
+        </property>
+        <property name="folio" type="string">
+            <column name="Folio" length="15" />
+        </property>
+        <property name="fechaInicio" type="date">
+            <column name="Fecha_Inicio" length="10" />
+        </property>
+        <property name="fechaFin" type="date">
+            <column name="Fecha_Fin" length="10" />
+        </property>
+        <property name="fechaRegistro" type="date">
+            <column name="Fecha_Registro" length="10" />
+        </property>
+        <property name="fechaEvaluacion" type="date">
+            <column name="Fecha_Evaluacion" length="10">
+                <comment>Fecha Limite para Evaluar</comment>
+            </column>
+        </property>
+        <property name="fechaEvaluado" type="date">
+            <column name="Fecha_Evaluado" length="10">
+                <comment>Fecha en la que se evaluo</comment>
+            </column>
+        </property>
+        <property name="origen" type="string">
+            <column name="Origen" length="45" />
+        </property>
+        <property name="normaRef" type="string">
+            <column name="Norma_Ref" length="45" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="Descripcion" length="65535" />
+        </property>
+        <property name="causalidad" type="string">
+            <column name="Causalidad" length="65535" />
+        </property>
+        <property name="situacionDeseada" type="string">
+            <column name="Situacion_Deseada" />
+        </property>
+        <property name="contencion" type="string">
+            <column name="Contencion" />
+        </property>
+        <property name="accionesSituacionDeseada" type="string">
+            <column name="Acciones_Situacion_Deseada" length="65535" />
+        </property>
+        <property name="evaluacion" type="string">
+            <column name="Evaluacion" />
+        </property>
+        <property name="documentosActualizados" type="string">
+            <column name="Documentos_Actualizados" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10/03/2021 11:22:19 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mx.edu.utxj.pye.hallazgos.pojos.TbUsuario" table="tb_usuario" catalog="hallazgos" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="100" />
+        </property>
+        <property name="usuario" type="string">
+            <column name="usuario" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="rol" type="string">
+            <column name="rol" length="45" />
+        </property>
+        <set name="tbHallazgosForEvalua" table="tb_hallazgo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Evalua" not-null="true" />
+            </key>
+            <one-to-many class="mx.edu.utxj.pye.hallazgos.pojos.TbHallazgo" />
+        </set>
+        <set name="tbHallazgosForAsignada" table="tb_hallazgo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Asignada" not-null="true" />
+            </key>
+            <one-to-many class="mx.edu.utxj.pye.hallazgos.pojos.TbHallazgo" />
+        </set>
+        <set name="tbHallazgosForReporta" table="tb_hallazgo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Reporta" not-null="true" />
+            </key>
+            <one-to-many class="mx.edu.utxj.pye.hallazgos.pojos.TbHallazgo" />
+        </set>
+    </class>
+</hibernate-mapping>
