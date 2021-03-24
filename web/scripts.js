@@ -74,7 +74,7 @@ $(document).ready(function ($) {
       "<ul class='sidebar-menu list-unstyled border-left border-primary border-thick'>" +
       "<li class='sidebar-list-item'><a href='nueva.jsp' class='sidebar-link text-muted pl-lg-5'>" +
       "<i class='fad fa-file-plus'></i><br>Nueva Accion</a></li>" +
-      "<li class='sidebar-list-item'><a href='#' class='sidebar-link text-muted pl-lg-5'>" +
+      "<li class='sidebar-list-item'><a href='modificar.jsp' class='sidebar-link text-muted pl-lg-5'>" +
       "<i class='fad fa-pencil-alt'></i><br>Modificar Accion</a></li>" +
       "</ul>" +
       "</div>" +

@@ -62,18 +62,18 @@
                                             <div class="form-group row">
                                                 <div class="col-md-9">
                                                     <div class="custom-control custom-radio custom-control-inline">
-                                                        <input id="radio1" type="radio" name="accion"
+                                                        <input disabled id="radio1" type="radio" name="accion"
                                                             class="custom-control-input" value="AC">
                                                         <label for="radio1"
                                                             class="custom-control-label">Correctiva</label>
                                                     </div>
                                                     <div class="custom-control custom-radio custom-control-inline">
-                                                        <input id="radio2" type="radio" name="accion"
+                                                        <input disabled id="radio2" type="radio" name="accion"
                                                             class="custom-control-input" value="AR">
                                                         <label for="radio2" class="custom-control-label">Riesgo</label>
                                                     </div>
                                                     <div class="custom-control custom-radio custom-control-inline">
-                                                        <input id="radio3" type="radio" name="accion"
+                                                        <input disabled id="radio3" type="radio" name="accion"
                                                             class="custom-control-input" value="AM">
                                                         <label for="radio3" class="custom-control-label">Mejora</label>
                                                     </div>
@@ -83,7 +83,7 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Origen del Hallazgo</label>
                                                 <div class="col-md-9 select mb-3">
-                                                    <select name="origen" class="form-control">
+                                                    <select disabled name="origen" class="form-control">
                                                         <option value="Auditoría Interna">Auditoría Interna</option>
                                                         <option value="Auditoría Externa">Auditoría Externa</option>
                                                         <option value="Queja">Queja</option>
@@ -95,32 +95,32 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Descripción</label>
                                                 <div class="col-md-9">
-                                                    <textarea class="form-control" name="descripcion" rows="5"
-                                                        style="resize: none; overflow: hidden;"></textarea>
+                                                    <textarea disabled class="form-control" name="descripcion" rows="5"
+                                                        style="resize: none;"></textarea>
                                                 </div>
                                             </div>
                                             <div class="line"></div>
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Causalidad</label>
                                                 <div class="col-md-9">
-                                                    <textarea class="form-control" name="causa" rows="5"
-                                                        style="resize: none; overflow: hidden;"></textarea>
+                                                    <textarea disabled class="form-control" name="causa" rows="5"
+                                                        style="resize: none;"></textarea>
                                                 </div>
                                             </div>
                                             <div class="line"></div>
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Situación Deseada</label>
                                                 <div class="col-md-9">
-                                                    <textarea class="form-control" name="s_deseada" rows="5"
-                                                        style="resize: none; overflow: hidden;"></textarea>
+                                                    <textarea disabled class="form-control" name="s_deseada" rows="5"
+                                                        style="resize: none;"></textarea>
                                                 </div>
                                             </div>
                                             <div class="line"></div>
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Contención</label>
                                                 <div class="col-md-9">
-                                                    <textarea class="form-control" name="contencion" rows="5"
-                                                        style="resize: none; overflow: hidden;"></textarea>
+                                                    <textarea disabled class="form-control" name="contencion" rows="5"
+                                                        style="resize: none;"></textarea>
                                                 </div>
                                             </div>
                                             <div class="line"></div>
@@ -128,8 +128,8 @@
                                                 <label class="col-md-3 form-control-label">Acciones para la situación
                                                     deseada</label>
                                                 <div class="col-md-9">
-                                                    <textarea class="form-control" name="as_deseada" rows="5"
-                                                        style="resize: none; overflow: hidden;"></textarea>
+                                                    <textarea disabled class="form-control" name="as_deseada" rows="5"
+                                                        style="resize: none;"></textarea>
                                                 </div>
                                             </div>
                                             <div class="line"></div>
@@ -137,7 +137,7 @@
                                                 <label class="col-md-3 form-control-label">Evaluación de la efectividad
                                                     de las acciones tomadas</label>
                                                 <div class="col-md-9">
-                                                    <textarea disabled class="form-control" name="evaluacion" rows="5"
+                                                    <textarea class="form-control" name="evaluacion" rows="5"
                                                         style="resize: none; overflow: hidden;"></textarea>
                                                 </div>
                                             </div>
@@ -154,7 +154,7 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Reporta</label>
                                                 <div class="col-md-9 select mb-3">
-                                                    <select name="reporta" class="form-control">
+                                                    <select disabled name="reporta" class="form-control">
                                                         <option value="Encargado Interna">Encargado Interna</option>
                                                         <option value="Encargado Externa">Encargado Externa</option>
                                                         <option value="Encargado">Encargado</option>
@@ -167,7 +167,7 @@
                                                 <label class="col-md-3 form-control-label">Asignado para su
                                                     análisis</label>
                                                 <div class="col-md-9 select mb-3">
-                                                    <select name="asignado" class="form-control">
+                                                    <select disabled name="asignado" class="form-control">
                                                         <option value="Asignado Interna">Asignado Interna</option>
                                                         <option value="Asignado Externa">Asignado Externa</option>
                                                         <option value="Asignado">Asignado</option>
@@ -179,7 +179,7 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Evaluó</label>
                                                 <div class="col-md-9 select mb-3">
-                                                    <select disabled name="evaluo" class="form-control">
+                                                    <select name="evaluo" class="form-control">
                                                         <option value="Evalua Interna">Evalua Interna</option>
                                                         <option value="Evalua Externa">Evalua Externa</option>
                                                         <option value="Evalua">Evalua</option>
@@ -189,7 +189,7 @@
                                             </div>
                                             <div class="line"></div>
                                             <div class="form-group">
-                                                <button type="submit" class="btn btn-primary">Registrar</button>
+                                                <button type="submit" class="btn btn-primary">Evaluar</button>
                                             </div>
                                         </form>
                                     </div>
