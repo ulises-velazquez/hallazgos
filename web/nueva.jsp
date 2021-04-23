@@ -58,7 +58,7 @@
                                     </div>
                                     <div class="card-body">
                                         <p>Tipo de Acción.</p>
-                                        <form>
+                                        <form id="registroAccion" action="HallazgoServlet" method="post">
                                             <div class="form-group row">
                                                 <div class="col-md-9">
                                                     <div class="custom-control custom-radio custom-control-inline">
@@ -155,10 +155,10 @@
                                                 <label class="col-md-3 form-control-label">Reporta</label>
                                                 <div class="col-md-9 select mb-3">
                                                     <select name="reporta" class="form-control">
-                                                        <option value="Encargado Interna">Encargado Interna</option>
-                                                        <option value="Encargado Externa">Encargado Externa</option>
-                                                        <option value="Encargado">Encargado</option>
-                                                        <option value="Encargado del SGI">Encargado del SGI</option>
+                                                        <option value="1">Encargado Interna</option>
+                                                        <option value="1">Encargado Externa</option>
+                                                        <option value="1">Encargado</option>
+                                                        <option value="1">Encargado del SGI</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -168,10 +168,10 @@
                                                     análisis</label>
                                                 <div class="col-md-9 select mb-3">
                                                     <select name="asignado" class="form-control">
-                                                        <option value="Asignado Interna">Asignado Interna</option>
-                                                        <option value="Asignado Externa">Asignado Externa</option>
-                                                        <option value="Asignado">Asignado</option>
-                                                        <option value="Asignado del SGI">Asignado del SGI</option>
+                                                        <option value="2">Asignado Interna</option>
+                                                        <option value="2">Asignado Externa</option>
+                                                        <option value="2">Asignado</option>
+                                                        <option value="2">Asignado del SGI</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -179,11 +179,11 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 form-control-label">Evaluó</label>
                                                 <div class="col-md-9 select mb-3">
-                                                    <select disabled name="evaluo" class="form-control">
-                                                        <option value="Evalua Interna">Evalua Interna</option>
-                                                        <option value="Evalua Externa">Evalua Externa</option>
-                                                        <option value="Evalua">Evalua</option>
-                                                        <option value="Evalua del SGI">Evalua del SGI</option>
+                                                    <select name="evaluo" class="form-control">
+                                                        <option value="3">Evalua Interna</option>
+                                                        <option value="3">Evalua Externa</option>
+                                                        <option value="3">Evalua</option>
+                                                        <option value="3">Evalua del SGI</option>
                                                     </select>
                                                 </div>
                                             </div>
